@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- 顶部标题 -->
+    <div class="brand">
+        <p>华农饭堂 SCAU CANTEEN</p>
+    </div>
+    <!-- 顶部标题 -->
+
+    <!-- 下方注册内容 -->
+    <div class="container">
+        <form action="register.php" method="get" name="form_reg">
+            <h1 align="center">用户注册</h1>
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td>
+                        <input type="text" name="username" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td>
+                        <input type="password" name="password1" value="" id="password1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认密码：</td>
+                    <td>
+                        <input type="password" name="password2" value="" id="password2">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="注册" class="button" onclick="return check();">
+        </form>
+    </div>
+    <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+
+    <script type="text/javascript">
+
+        function check() {
+            //检查密码
+            if (document.form_reg.password1.value == "") {
+                alert("请输入密码");
+                document.form_reg.password1.focus();
+                return false;
+            }
+            if (document.form_reg.password2.value == "") {
+                alert("请确认密码");
+                document.form_reg.password2.focus();
+                return false;
+            }
+            if (document.form_reg.password1.value != document.form_reg.password2.value) {
+                alert("密码不一致，请重试");
+                document.getElementById("password2").value = "";
+                document.form_reg.password2.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

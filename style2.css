@@ -1,0 +1,76 @@
+*{
+    margin: 0;/*外边距*/
+    padding: 0;/*内边距*/
+    text-decoration: none;/*文本的装饰效果*/
+    list-style: none;/*列表属性*/
+}
+.main{
+    width: 800px;/*整个网页800宽*/
+    margin: auto;/*让它水平居中*/
+
+}
+.nav,.container{
+    float: left;
+    /*满浏览器*/
+    width: 100%;/*宽度*/
+    /*内边距会影响整个盒子的实际大小，以下是处理方法*/
+    box-sizing: border-box;
+}
+
+.nav{
+    background: rgb(234,251,229);
+    height: 70px;
+}
+.name{
+    color: green;/*标签字体颜色*/
+    padding: 16px 20px;/*第一个参数是距上下，第二个参数是距左右*/
+    font-size: 35px;
+    font-family: "微软雅黑";
+    float:left;
+}
+.nav a{/*设置 .nav中的a标签*/
+    color: rgb(112,114,112);/*标签字体颜色*/
+    padding: 30px 10px;/*第一个参数是距上下，第二个参数是距左右*/
+    font-size: 20px;
+    display: inline-block;/*让链接以块的形式显示*/
+    float:right;
+}
+
+.nav a:hover{/*a:hover用于设置当鼠标悬停在超链接之上时超链接的样式*/
+    background: #bbb;
+    color: #000;
+}
+.container{
+    background:rgb(216,228,228);
+    height: 650px;
+}
+/*让左右两边固定宽度200*/
+.lside{
+    background: rgb(234,251,229);
+    width: 320px;
+    float: left;
+    height: 650px;
+    overflow-y: scroll;/*滚动条*/
+}
+.lside img{
+    width: 300px;
+}
+
+.lside a{
+
+    color: #0f0f0f;
+    margin: 1px 1px 1px 80px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: gray solid 2px;
+}
+
+.rside{
+    float: left;
+    overflow-y: scroll;
+    height: 550px;
+}
+.show{
+    font-size: 50px;
+    margin: 15px 0px 0px 450px;
+}

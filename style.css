@@ -1,0 +1,55 @@
+*{
+    margin: 0;/*外边距*/
+    padding: 0;/*内边距*/
+    text-decoration: none;/*文本的装饰效果*/
+    list-style: none;/*列表属性*/
+}
+
+.brand {
+    margin: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    height: 35px;
+    background-color: #eaf3d7;
+    border: 1px #d2d5d0 solid;
+}
+
+.brand p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #42ad35;
+    line-height: 35px;
+}
+
+.container{
+    background: #eaf3d7;
+    width: 800px;/*整个网页800宽*/
+    height: 500px;
+    margin: auto;/*让它水平居中*/
+    border-radius:20px;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container table{
+    margin: 50px 1px 1px 250px;/*上右下左*/
+}
+.container table td{
+    font-size: 25px;
+    padding: 10px;
+}
+.container table td input{
+    /* height: 35px; */
+    width: 200px;
+    height: 30px;
+    margin: 10px 0;
+}
+.button{
+    font-size: 25px;
+    width: 120px;
+    height: 50px;
+    margin: 50px 1px 1px 350px;
+}
